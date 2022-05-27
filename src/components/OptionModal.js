@@ -37,12 +37,12 @@ const OptionModal = ({
                 </TouchableWithoutFeedback>
               );
             })}
-            {/* <TouchableWithoutFeedback onPress={onPlayPress}>
+            <TouchableWithoutFeedback onPress={onPlayPress}>
               <Text style={styles.option}>Play</Text>
             </TouchableWithoutFeedback>
             <TouchableWithoutFeedback onPress={onPlayListPress}>
               <Text style={styles.option}>Add to Playlist</Text>
-            </TouchableWithoutFeedback> */}
+            </TouchableWithoutFeedback>
           </View>
         </View>
         <TouchableWithoutFeedback onPress={onClose}>
