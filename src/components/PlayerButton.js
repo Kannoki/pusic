@@ -1,8 +1,7 @@
 import React from 'react';
-import { AntDesign } from '@expo/vector-icons';
+import { MaterialIcons } from '@expo/vector-icons';
 import color from '../misc/color';
 import ReactDOM from 'react-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 
@@ -14,27 +13,25 @@ const PlayerButton = props => {
     const getIconName = type => {
         switch (type) {
             case 'PLAY':
-                return 'pausecircle';
+                return 'pause';
             case 'PAUSE':
-                return 'playcircleo';
+                return 'play-arrow';
             case 'NEXT':
-                return 'forward';
+                return 'skip-next';
             case 'PREV':
-                return 'banckward';
+                return 'skip-previous';
             case 'SHUF':
-                return 'fa-solid fa-shuffle';
+                return 'shuffle';
             case 'FLOW':
                 return 'double-arrow';
             case 'LOOP':
                 return 'loop';
-            case 'CONT':
-                return 
             
 
         }
     };
     return (
-        <AntDesign
+        <MaterialIcons
             {...props}
             onPress={onPress}
             name={getIconName(iconType)}

@@ -128,7 +128,7 @@ const Player = () => {
                             setCurrentPosition(0);
                         }}
                     />
-                    <View style={styles.audioControllers}>
+                    <View style={styles.innerMedia}>
                         <PlayerButton iconType='LOOP'
                         //  onPress={}
                           />
@@ -180,6 +180,11 @@ const styles = StyleSheet.create({
         color: color.FONT,
         padding: 15,
     },
+    innerMedia:{
+        flexDirection: 'row',
+        justifyContent: 'center',
+        justifyContent: 'space-evenly',
+    }
 });
 
 export default Player;
